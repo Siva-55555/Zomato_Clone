@@ -207,6 +207,70 @@
   font-weight: 400;
 }
 
+.popular__localities {
+  margin-top: 50px;
+}
+
+.popular__localities  h1 {
+  display: flex;
+  font-weight: 300;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+  /* width: 100%; */
+  padding: 20px;
+}
+
+.card__holder .locality_card {
+  width: 30%;
+  box-shadow: .1px .1px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 300ms ease-in;
+}
+
+.locality_card h4 {
+  font-weight: 300;
+  padding: 3px;
+}
+
+.locality_card span {
+  font-weight: 200;
+  font-size: small;
+  padding: 3px;
+}
+
+.locality_card .fa-angle-right {
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+}
+
+.locality_card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+}
+
+.locality_card span i {
+ position: absolute;
+ left: 11vw; 
+}
+
+.locality_card:hover {
+  transform: scale(1.01);
+}
+
 @media only screen and (max-width: 670px) {
   .navbar__menu_container .link {
     display: none;
@@ -244,4 +308,13 @@
   .input_container_search {
     border-left: none;
   }
+
+  .card__holder .locality_card {
+    width: 100%;
+  }
+
+  .locality_card span i {
+    position: absolute;
+    left: 35vw; 
+   }
 }
