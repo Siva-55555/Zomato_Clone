@@ -380,7 +380,7 @@
   width: 35%;
 }
 
-.footer  {
+.footer {
   width: 100%;
 }
 
@@ -430,7 +430,7 @@
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 5px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 .footer__link {
@@ -438,7 +438,7 @@
   color: gray;
   font-size: 13px;
   font-weight: 300;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .footer__link:hover {
@@ -476,7 +476,7 @@
   padding: 20px 0;
   font-size: 12px;
   color: gray;
-  border-top: .9px solid gray;
+  border-top: 0.9px solid gray;
 }
 
 @media only screen and (max-width: 1300px) {
