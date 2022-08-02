@@ -380,6 +380,105 @@
   width: 35%;
 }
 
+.footer  {
+  width: 100%;
+}
+
+.footer_section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.footer_section1 img {
+  width: 120px;
+  height: auto;
+}
+
+.section1__button_container {
+  display: flex;
+  gap: 16px;
+}
+
+.section1__button_container button {
+  padding: 5px;
+  width: 90px;
+  border: 1px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation_container {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 48px 0;
+}
+
+.link__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link__container h5 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  letter-spacing: .8px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: .5px;
+}
+
+.footer__link:hover {
+  color: black;
+}
+
+.social__links_container {
+  display: flex;
+  gap: 8px;
+}
+
+.social__links_container button {
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links_container button i {
+  color: white;
+  font-size: 13px;
+}
+
+.footer__store_logos {
+  width: 100%;
+}
+
+.footer .disclaimer {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  font-size: 12px;
+  color: gray;
+  border-top: .9px solid gray;
+}
+
 @media only screen and (max-width: 1300px) {
   .get__the_app .semi_container .left {
     flex: 1;
@@ -401,6 +500,10 @@
 
   .get__the_app .semi_container {
     width: 90%;
+  }
+
+  .navigation_container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -458,5 +561,22 @@
   .get__the_app .semi_container {
     width: 80%;
     flex-direction: column;
+  }
+
+  .navigation_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navigation_container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer_section1 {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
